@@ -2,14 +2,12 @@ hour = int(input("Enter your hour:"))
 rate = int(input("Enter your rate:"))
 
 def salary(time , money):
-    t = time * money
-    print("Your salary payment is :" , t)
+    return time * money
 
 
 def over_pay(time , money):
     over_time = time - 160
-    payment = over_time * (money * 1.5)
-    print("Your overpay is :" , payment)
+    return over_time * (money * 1.5)
 
 
 def regular(time , money):
@@ -20,7 +18,5 @@ def regular(time , money):
     else :
         c = salary(time , money)
         print("Your regular payment is :" , c)
-
-
 
 regular(hour , rate)
